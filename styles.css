@@ -23,6 +23,24 @@ body {
   font-family: "Inter", sans-serf;
 }
 
+::-webkit-scrollbar {
+  width: 0.7rem;
+  opacity: 0;
+  margin-top: 70px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #202b46;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #202b46;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-text);
+}
+
 .brand {
   height: 70px;
   display: flex;
@@ -107,10 +125,11 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   width: 265px;
-  min-height: 100vh;
   background-color: #202b46;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content {
@@ -140,7 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .dashboards-title {
@@ -159,7 +178,7 @@ body {
 
 .list-circle {
   list-style: none;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .active {
@@ -177,6 +196,36 @@ body {
 
 .list-circle > li:hover {
   color: var(--white);
+}
+
+.pages,
+.apps,
+.layouts,
+.help {
+  padding-left: 25px;
+  color: #646477;
+}
+
+.pages li,
+.apps li,
+.layouts li,
+.help li {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  padding-block: 0.2rem;
+  font-weight: 500;
+}
+
+.pages--link_group,
+.apps--link_group,
+.layouts--link_group,
+.help--link_group {
+  display: flex;
+  align-items: center;
 }
 
 /*
