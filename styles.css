@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --bg: #f5f8fa;
   --heading-text: #181c32;
   --text-color1: #5e6278;
   --dark-text: #3f4254;
@@ -23,6 +24,10 @@ body {
   font-family: "Inter", sans-serf;
 }
 
+header {
+  margin-right: 265px;
+}
+
 ::-webkit-scrollbar {
   width: 0.7rem;
   opacity: 0;
@@ -43,29 +48,55 @@ body {
 
 .brand {
   height: 70px;
+  width: 265px;
   display: flex;
+  position: fixed;
   align-items: center;
-  justify-content: left;
-  font-size: 2.5rem;
+  justify-content: space-between;
+  font-size: 1.1rem;
   border-bottom: 1px dashed var(--sidebar-text);
   font-weight: bold;
+  background-color: #202b46;
+  z-index: 1;
+}
+
+.collapse {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  margin-right: 2rem;
+  background-color: var(--dark-text);
+  color: var(--bg);
+  border-radius: 5px;
+}
+
+.brand-img {
+  width: 11.5rem;
+  padding-left: 2rem;
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   height: 70px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin-left: 265px;
-  padding: 0px 30px;
+  padding: 0px 30px 0px 285px;
+  background-color: var(--white);
 }
 
 .navbar > ul > li {
-  margin-left: 2.5rem;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--text-color1);
+}
+
+.text-links li {
+  margin-left: 1rem;
+}
+
+.icon-links li {
+  margin-left: 2rem;
 }
 
 .navbar i {
@@ -127,14 +158,12 @@ body {
   top: 0;
   width: 265px;
   background-color: #202b46;
-  height: 100%;
+  height: 1500px;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
-
-.content {
-  background-color: #f5f8fa;
-  width: 100%;
+.sidebar-links {
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .sidebar li,
@@ -160,6 +189,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 .dashboards-title {
@@ -194,8 +224,26 @@ body {
   top: -3px;
 }
 
-.list-circle > li:hover {
+.list-circle > li:hover,
+.sidebar-links li:hover {
   color: var(--white);
+}
+
+.show-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--sidebar-text);
+  padding-left: 2rem;
+}
+
+.show-toggle i {
+  font-size: 1.5rem;
+}
+
+.sidebar-links div > i {
+  margin-right: 1.5rem;
 }
 
 .pages,
@@ -203,7 +251,15 @@ body {
 .layouts,
 .help {
   padding-left: 25px;
+}
+
+.pages h2,
+.apps h2,
+.layouts h2,
+.help h2 {
   color: #646477;
+  font-size: 1.3rem;
+  padding-block: 1rem;
 }
 
 .pages li,
@@ -215,8 +271,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 1rem;
-  padding-block: 0.2rem;
+  padding: 1rem;
   font-weight: 500;
 }
 
@@ -226,6 +281,38 @@ body {
 .help--link_group {
   display: flex;
   align-items: center;
+}
+
+.bottom-link {
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  background-color: #202b46;
+  width: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bottom-link h4 {
+  padding: 1.2rem 4rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #35425459;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #b5b5c3;
+}
+
+.fa-angle-down {
+  font-size: 1rem;
+}
+.content {
+  margin-left: 265px;
+  overflow-y: hidden;
+  background-color: #f5f8fa;
 }
 
 /*
