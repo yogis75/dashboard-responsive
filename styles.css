@@ -564,6 +564,10 @@ h2.number {
   color: rgba(255, 0, 0, 0.659);
 }
 
+.el,
+.hl {
+  margin-top: 1.5rem;
+}
 .top-content2 {
   background-color: var(--white);
   border-radius: 10px;
