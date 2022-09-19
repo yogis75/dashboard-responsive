@@ -63,6 +63,10 @@ header {
   z-index: 10;
 }
 
+.mobile-only {
+  display: none;
+}
+
 .collapse {
   font-size: 1.5rem;
   padding: 0.8rem;
@@ -102,7 +106,7 @@ header {
 }
 
 .icon-links li {
-  margin-left: 1.5rem;
+  margin-left: 0.6rem;
 }
 
 .navbar i {
@@ -693,12 +697,34 @@ h2.number {
   background-color: var(--bg);
 }
 
-@media screen and (max-width: 1400px) {
+.top-content3,
+.top-content4 {
+  position: relative;
+}
+
+.svg-container2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -4rem;
+}
+
+.svg-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1400px) {
   .top-content {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
-    margin: 16rem 3rem 0 3rem;
+    margin: 16rem 2rem 0 2rem;
   }
   .right-burger,
   .left-burger {
@@ -706,11 +732,19 @@ h2.number {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
   .top-content1 {
+    min-height: 1000px;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+
+  .top-content3,
+  .top-content4 {
+    height: 50vh;
+    max-height: 550px;
   }
 
   .right-burger,
@@ -719,7 +753,7 @@ h2.number {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   header {
     margin-right: 0;
   }
@@ -737,7 +771,7 @@ h2.number {
     display: none;
   }
   .navbar {
-    padding-left: 3rem;
+    padding-left: 5rem;
     padding-right: 2rem;
     height: 50px;
   }
@@ -753,34 +787,64 @@ h2.number {
     padding: 5px 15px 5px 15px;
   }
 
+  .top-content2.top-content3,
+  .top-content2.top-content4 {
+    height: 50vh;
+    max-height: 550px;
+  }
+
   .top-content {
-    margin: 160 auto 0 auto;
+    margin: 160 1rem 0 1rem;
   }
   .top-content section {
     height: 100vh;
     max-height: 700px;
   }
   .right-burger {
-    display: inline;
+    display: block;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 7;
-    padding: 1.5rem 1rem;
+    padding: 1.55rem 1rem;
   }
 
   .left-burger {
-    display: inline;
+    display: block;
     position: absolute;
     left: 0;
     top: 0;
-    padding: 1.5rem 1rem;
+    padding: 1.55rem 1rem;
     z-index: 7;
   }
 
   .left-burger i,
   .right-burger i {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .svg-container2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+  }
+  .svg-img {
+    max-width: 80%;
+    object-fit: contain;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .left-float {
+    padding-left: 1.5rem;
+  }
+  .right-float {
+    padding-right: 1.5rem;
   }
 }
 /*
