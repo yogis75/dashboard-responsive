@@ -333,6 +333,12 @@ header {
   font-size: 1rem;
 }
 
+.hide {
+  display: none;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
 .content {
   margin-left: 265px;
   overflow-y: hidden;
@@ -719,6 +725,29 @@ h2.number {
   object-fit: contain;
 }
 
+.footer {
+  margin-top: 2rem;
+  height: 30px;
+  padding-left: 285px;
+  padding-right: 2rem;
+  background-color: var(--white);
+}
+
+.footer a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-color1);
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: var(--blue);
+}
+
+section:first-of-type {
+  margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 1400px) {
   .top-content {
     display: grid;
@@ -845,6 +874,9 @@ h2.number {
   }
   .right-float {
     padding-right: 1.5rem;
+  }
+  .footer {
+    padding-left: 2rem;
   }
 }
 /*
