@@ -25,16 +25,16 @@
     <main>
       <header>
         <nav class="navbar">
-          <ul class="text-links">
-            <li>Dashboards</li>
-            <li>Pages</li>
-            <li>Apps</li>
-            <li>Layouts</li>
-            <li>Help</li>
+          <ul class="text-links" id="text-links">
+            <li><a href="">Dashboards</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Apps</a></li>
+            <li><a href="">Layouts</a></li>
+            <li><a href="">Help</a></li>
           </ul>
           
             <ul class="icon-links">
-              <img class="mobile-only" src="./images/logo-small.svg" alt="" />
+              <li class="mobile-only"><img src="./images/logo-small.svg" alt="" /></li>
               <li><i class="fa-solid fa-magnifying-glass"></i></li>
               <li><i class="fa-solid fa-chart-simple"></i></li>
               <li class="fortyfive"><i class="fa-solid fa-border-all"></i></li>
@@ -42,8 +42,8 @@
               <li><img class="nav-img" src="./images/flags/us.svg" alt="flag" /></li>
               <li><i class="fa-solid fa-sun"></i></li>
               <li><img class="profile-img" src="./images/people/guy.jpg" alt="guy" /></li>
-              <div class="right-burger"><i class="fi fi-rr-menu-burger"></i></div>
-              <div class="left-burger"><i class="fi fi-rr-menu-burger"></i></div>
+              <li><div class="right-burger"><i class="fi fi-rr-menu-burger"></i></div></li>
+              <li><div class="left-burger"><i class="fi fi-rr-menu-burger"></i></div></li>
             </ul>
             
         </nav>
@@ -51,7 +51,7 @@
           <img class="brand-img" src="./images/brand.svg" alt="brand" /><i class="fa-solid fa-angles-left collapse"></i> </div>
           
       </header>
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
        <div class="sidebar-links">
         <div class="dashboards">
           <div class="dashboards-title-container">
@@ -62,14 +62,14 @@
             <li><i class="fa-solid fa-circle"></i> Projects</li>
             <li><i class="fa-solid fa-circle"></i> eCommerce</li>
             <li><i class="fa-solid fa-circle"></i> Marketing</li>
-            </ul><ul class="list-circle" id="toggle">
+            </ul><ul class="list-circle hide" id="toggle">
             <li><i class="fa-solid fa-circle"></i> Social</li>
             <li><i class="fa-solid fa-circle"></i> Bidding</li>
             <li><i class="fa-solid fa-circle"></i> Online Courses</li>
             <li><i class="fa-solid fa-circle"></i> Logistics</li>
           </ul>
           <div class="show-toggle" id="toggle-div">
-            <p id="toggle-text">Show less</p><i class="fa-solid fa-square-minus" id="toggle-icon"></i>
+            <p id="toggle-text">Show more</p><i class="fa-solid fa-square-plus" id="toggle-icon"></i>
           </div>
         </div>
         <div class="pages">
