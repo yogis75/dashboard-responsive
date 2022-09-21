@@ -18,6 +18,8 @@ toggleDiv.addEventListener("click", () => {
 });
 
 // Navbat Text links show hide
+
+const content = document.querySelector(".content");
 const textLinks = document.querySelector("#text-links");
 const rightBurger = document.querySelector(".right-burger");
 
@@ -37,7 +39,7 @@ rightBurger.addEventListener(
 );
 
 textLinks.addEventListener("click", hideRightSidebar);
-document.querySelector(".content").addEventListener("click", hideRightSidebar);
+content.addEventListener("click", hideRightSidebar);
 
 //Sidebar show hide
 
@@ -46,4 +48,28 @@ const sidebar = document.querySelector("#sidebar");
 
 leftBurger.addEventListener("click", () => {
   sidebar.classList.toggle("show-sidebar");
+});
+
+// hover language menu
+
+const hoverDiv = document.querySelector("#hover-only");
+const languageButton = document.querySelector("#language-button");
+
+languageButton.addEventListener("mouseenter", () => {
+  hoverDiv.classList.toggle("hide");
+});
+
+content.addEventListener("mouseenter", () => hoverDiv.classList.add("hide"));
+
+//Hover profile
+
+const profileButton = document.querySelector("#profile");
+const profileDiv = document.querySelector("#hover-profile");
+
+profileButton.addEventListener("mouseenter", () => {
+  profileDiv.classList.toggle("hide");
+});
+
+content.addEventListener("mouseenter", () => {
+  profileDiv.classList.add("hide");
 });

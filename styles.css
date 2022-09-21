@@ -177,6 +177,126 @@ header {
   background-color: var(--blue-bg);
 }
 
+.hover-only {
+  position: absolute;
+  top: 7rem;
+  right: 12rem;
+  z-index: 11;
+  background-color: var(--white);
+  height: 15rem;
+  width: 10rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hover-only a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  color: var(--dark-text);
+  font-size: 500;
+  width: 90%;
+  margin: 0.2rem 0.2rem 0.4rem 0.4rem;
+}
+
+.hover-only a:hover {
+  color: var(--blue);
+  background-color: var(--blue-bg);
+}
+
+.hover-only a:first-of-type {
+  background-color: var(--blue-bg);
+  color: var(--blue);
+}
+
+.hover-only img {
+  height: 1.8rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.hover-only-profile {
+  z-index: 12;
+  height: 40rem;
+  width: 30rem;
+  position: absolute;
+  top: 70px;
+  right: 3rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hover-only-profile h3 {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.hover-only-profile .author-text {
+  text-align: left;
+  margin-left: 0;
+  padding: 0;
+}
+
+.hover-only-profile .flex {
+  justify-content: left;
+}
+
+.hover-only-profile .flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hover-only-profile img {
+  height: 5rem;
+  margin: 0.6rem 2rem;
+}
+
+.hover-only-profile i {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.hover-only-profile .small-text2 {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1rem;
+  margin-right: 1rem;
+  background-color: var(--blue-bg);
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.small-text2 img {
+  height: 1.5rem;
+  margin: 0.2rem 0.8rem;
+  border-radius: 5px;
+}
+
+.hover-only-profile hr {
+  margin-block: 1rem;
+}
+
+.hover-only-profile p {
+  color: var(--dark-text);
+  padding: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.hover-only-profile p:hover {
+  background-color: var(--blue-bg);
+  color: var(--blue);
+}
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -358,6 +478,11 @@ header {
   color: var(--green);
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+.small-text {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .heading-and-text h2 {
@@ -847,6 +972,22 @@ section:first-of-type {
     padding-right: 2rem;
     height: 50px;
   }
+
+  .hover-only {
+    position: absolute;
+    top: 5rem;
+    left: 16rem;
+    z-index: 11;
+    background-color: var(--white);
+    height: 14rem;
+    width: 10rem;
+  }
+
+  .hover-only-profile {
+    top: 5rem;
+    left: 4.5rem;
+  }
+
   .content {
     margin-left: 0;
   }
